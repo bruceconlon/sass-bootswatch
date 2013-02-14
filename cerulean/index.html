@@ -74,13 +74,28 @@
           <li class="dropdown" id="preview-menu">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Download <b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li><a target="_blank" href="bootstrap.min.css">bootstrap.min.css</a></li>
-              <li><a target="_blank" href="bootstrap.css">bootstrap.css</a></li>
+              <li>
+                <a target="_blank" href="bootstrap.min.css" onClick="_gaq.push(['_trackEvent', 'bootswatch', 'cerulean', 'bootstrap.min.css']);">
+                  bootstrap.min.css
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="bootstrap.css" onClick="_gaq.push(['_trackEvent', 'bootswatch', 'cerulean', 'bootstrap.css']);">
+                  bootstrap.css
+                </a>
+              </li>
               <li class="divider"></li>
-              <li><a target="_blank" href="_variables.scss">_variables.scss</a></li>
-              <li><a target="_blank" href="_bootswatch.scss">_bootswatch.scss</a></li>
+              <li>
+                <a target="_blank" href="https://raw.github.com/theblacksmith/sass-bootswatch/gh-pages/cerulean/_variables.scss" onClick="_gaq.push(['_trackEvent', 'bootswatch', 'cerulean', '_variables.scss']);">
+                  _variables.scss
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://raw.github.com/theblacksmith/sass-bootswatch/gh-pages/cerulean/_bootswatch.scss" onClick="_gaq.push(['_trackEvent', 'bootswatch', 'cerulean', '_bootswatch.scss']);">
+                  _bootswatch.scss
+                </a>
+              </li>
             </ul>
-          </li>
         </ul>
         <ul class="nav pull-right" id="main-menu-right">
           <li><a rel="tooltip" target="_blank" href="http://builtwithbootstrap.com/" title="Showcase of Bootstrap sites &amp; apps" onclick="_gaq.push(['_trackEvent', 'click', 'outbound', 'builtwithbootstrap']);">Built With Bootstrap <i class="icon-share-alt"></i></a></li>

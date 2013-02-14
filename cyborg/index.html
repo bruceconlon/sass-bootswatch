@@ -74,11 +74,27 @@
           <li class="dropdown" id="preview-menu">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Download <b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li><a target="_blank" href="bootstrap.min.css">bootstrap.min.css</a></li>
-              <li><a target="_blank" href="bootstrap.css">bootstrap.css</a></li>
+              <li>
+                <a target="_blank" href="bootstrap.min.css" onClick="_gaq.push(['_trackEvent', 'bootswatch', 'cyborg', 'bootstrap.min.css']);">
+                  bootstrap.min.css
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="bootstrap.css" onClick="_gaq.push(['_trackEvent', 'bootswatch', 'cyborg', 'bootstrap.css']);">
+                  bootstrap.css
+                </a>
+              </li>
               <li class="divider"></li>
-              <li><a target="_blank" href="_variables.scss">_variables.scss</a></li>
-              <li><a target="_blank" href="_bootswatch.scss">_bootswatch.scss</a></li>
+              <li>
+                <a target="_blank" href="https://raw.github.com/theblacksmith/sass-bootswatch/gh-pages/cyborg/_variables.scss" onClick="_gaq.push(['_trackEvent', 'bootswatch', 'cyborg', '_variables.scss']);">
+                  _variables.scss
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://raw.github.com/theblacksmith/sass-bootswatch/gh-pages/cyborg/_bootswatch.scss" onClick="_gaq.push(['_trackEvent', 'bootswatch', 'cyborg', '_bootswatch.scss']);">
+                  _bootswatch.scss
+                </a>
+              </li>
             </ul>
           </li>
         </ul>
